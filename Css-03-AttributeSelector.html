@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*p[class = 'chombi']{
+            background-color: brown;
+        }
+
+        p[class = 'chombi']{
+            background-color: blue;
+        }
+        p[class^='chombi']{
+            background-color: aqua;
+        }
+        p[class$='chombi']{
+            background-color: green;
+        }
+
+
+        p[class*= "dinga"]{
+            background-color: blueviolet;
+        }
+        p[class*= "dinga"]{
+            background-color: palevioletred;
+        }
+
+        P[class~="chom"]{
+            background-color: rgb(234, 37, 165);
+        }*/
+
+    
+       /* 
+        p[id]{
+            background-color: orangered;
+        }
+
+        p[class]{   
+            background-color: aqua;
+        }
+
+        p[id="chumma"]{ 
+            background-color: green;
+        }
+
+        p[class="chombi"]{
+            background-color: blue;
+        }
+
+        p[class*="chombi"]{ 
+            background-color: darkred;
+        }
+
+        p[class^="chombi"]{ 
+            background-color: palevioletred;
+        }
+
+        p[class$="chombi"]{  
+            background-color: darkgoldenrod;
+        }
+*/
+       
+
+        p[class~="chombi"]{
+            background-color: orangered;
+        }
+    </style>
+
+</head>
+<body>
+    <p id="chumma">id</p>
+    <p class="chombi">class</p>
+    <p class="chombi">class</p>
+
+    <p class="chombi dingi">class</p>
+    <p class="dingi chombi">class</p>
+
+    <p class="dingadingichombi">class</p>
+
+    <p class="chombidingadingi">class</p>
+    
+    <p class="chombi dinga dingi">class</p>
+    <p class="chombi dinga chom dingi">class</p>
+
+
+    
+</body>
+</html>

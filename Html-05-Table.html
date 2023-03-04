@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1px">
+        <tr >
+            <th>Name</th>
+            <th>Empid</th>
+            <th>Salary</th>
+        </tr>
+        <tr>
+            <td>101</td>
+            <td>Shrest</td>
+            <td>100000</td>
+        </tr>
+        <tr>
+            <td>102</td>
+            <td>jyesth</td>
+            <td>100000</td>
+        </tr>
+        <tr>
+            <td>102</td>
+            <td>hamza</td>
+            <td>300000</td>
+        </tr>
+        <tr >
+            <td colspan="2"> Total Salary</td>
+            <td>600000</td>
+        </tr>
+    </table>
+    <br> 
+
+    <!-- attribute-> border = "px"
+         attribute-> colspan = no of cell space-
+        shortcut - table>tr*3>td*2
+        -->
+
+        
+<!-- <table border="1px">
+    <tr>
+        <td>2</td>
+        <td>2</td>
+    </tr>
+    <tr>
+        <td rowspan="2">3</td>
+        <td>3</td>
+    </tr>
+    <tr>
+       
+        <td>3</td>
+    </tr>
+</table> -->
+<table border="1px"> <caption>Employment detail</caption>
+    <!-- Table border should be 1px --> 
+<thead> 
+    <tr >
+        <th>Empid</th>
+        <th>Name</th>
+        <th>Salary</th>
+    </tr>
+</thead> 
+<tbody>
+    <tr>
+        <td>101</td>
+        <td>Shrest</td>
+        <td rowspan="2">100000</td>
+    </tr>
+    <tr>
+        <td>102</td>
+         <td>jyesth</td>
+        
+    </tr>
+    <tr>
+        <td>102</td>
+        <td>hamza</td>
+        <td>300000</td>
+    </tr>
+</tbody>
+<tfoot>
+    <tr >
+        <td colspan="2"> Total Salary</td>
+        <td>600000</td>
+    </tr>
+</tfoot>
+</table>
+
+dl>(dt{term$}>dd{definition $}>ul>li{item$}*3)*2 <br>
+<dl>
+    <dt>term1
+        <dd>definition 1
+            <ul>
+                <li>item1</li>
+                <li>item2</li>
+                <li>item3</li>
+            </ul>
+        </dd>
+    </dt>
+    <dt>term2
+        <dd>definition 2
+            <ul>
+                <li>item1</li>
+                <li>item2</li>
+                <li>item3</li>
+            </ul>
+        </dd>
+    </dt>
+</dl>
+
+dl>dt{term$}*2>dd{definition $}>ul>li{item$}*3   <br>
+<dl>
+    <dt>term1
+        <dd>definition 1
+            <ul>
+                <li>item1</li>
+                <li>item2</li>
+                <li>item3</li>
+            </ul>
+        </dd>
+    </dt>
+    <dt>term2
+        <dd>definition 2
+            <ul>
+                <li>item1</li>
+                <li>item2</li>
+                <li>item3</li>
+            </ul>
+        </dd>
+    </dt>
+</dl>
+
+dl>dt{term$}*2>(dd{definition $}>ul>li{item$}*3) <br>
+<dl>
+    <dt>term1
+        <dd>definition 1
+            <ul>
+                <li>item1</li>
+                <li>item2</li>
+                <li>item3</li>
+            </ul>
+        </dd>
+    </dt>
+    <dt>term2
+        <dd>definition 2
+            <ul>
+                <li>item1</li>
+                <li>item2</li>
+                <li>item3</li>
+            </ul>
+        </dd>
+    </dt>
+</dl>
+<br> 
+
+</body>
+</html>

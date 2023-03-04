@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div p{ /*Descendent Selector*/
+            background-color: blue;
+        }
+        div > p{ /*Direct child Selector*/
+            background-color: aqua;
+        }
+        div ~ p{ /*General Sibbling*/
+            background-color: brown;
+        }
+        div + p{ /*Immediate or Adjacent Selector*/
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Direct Child</p>
+        <p>Direct Child</p>
+        <span>
+            <p>Indirect Child</p>
+        </span>
+    </div>
+    <p>General Sibbling</p> <!--also called nearest or immediate sibbling-->
+    <p>General Sibbling</p>
+    <p>General Sibbling</p>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            background-color: red;
+            background-image: linear-gradient(black, yellow);
+            height: 700px;
+            padding: 20px;
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
+            flex-direction: row;
+        }
+        .item {
+            background-color: rgba(255, 255, 0, 0.628);
+            height: 400px;
+            overflow: scroll;
+
+            /*flex-grow: 1;*/
+        }
+
+        /*
+        flex-basic :- it is used to control the length of flex item in flex-direction. (COmpare to width)
+
+        order :- it is used to arrange the flex-item in an order. flex-item having higher order-value will move at last. flex item will be arranged according to order value.
+
+        flex-shrink - (value is equal to (number of time)) - it will control how much flex-item will shrink. (we are using this for child)
+
+        flex-grow :- it will control how much space flex-item will occupy from available space.(we are using it for all the item with value-1)
+
+        align-self :- is is used to arrange the individual felx-item in opposite of flex-direction. (align item apply on all child but by using align self child individually allign them self.)
+        */
+        .item1 {
+            flex-basis: 20%;
+            flex-shrink: 1;
+            /*order: 2;*/
+        }
+        .item2 {
+            flex-basis: 40%;
+            flex-shrink: 10; /*it shrink fast with 5-times speed */
+            align-self: center;
+        }
+        .item3 {
+            flex-basis: 20%;
+            flex-shrink: 1;
+            align-self: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">lorem100</div>
+        <div class="item item2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat culpa reprehenderit voluptatum doloremque accusantium repudiandae quisquam vitae provident reiciendis expedita? Earum est numquam qui veniam, sapiente beatae dolore consequatur repellendus vero placeat, non iusto esse ducimus saepe voluptatum, quia ipsum similique error. Minus praesentium est ullam, perferendis inventore voluptatem repellendus vel omnis esse voluptate adipisci asperiores dolorem eos quia, libero beatae reiciendis numquam fugiat quae accusantium facere commodi rem aliquam! Natus in laboriosam autem earum soluta quod corrupti at accusamus, possimus, ducimus repudiandae quisquam alias tempora. Officia aliquam laborum praesentium, distinctio atque autem exercitationem omnis amet fugiat quis temporibus voluptatibus vero minima quas. Incidunt dolores, distinctio id neque beatae facilis, labore quae amet nulla, in magni blanditiis tempora ipsum harum doloribus quia odio qui quod necessitatibus recusandae. Facilis aperiam quidem eaque in quia libero voluptate. Repudiandae odio repellat modi error cupiditate distinctio voluptatibus adipisci cumque deleniti? Aliquid blanditiis, laborum provident perferendis nostrum illum corporis soluta nobis reprehenderit ratione nisi possimus unde modi ipsum natus minima nemo aut deserunt! Culpa distinctio fugiat earum id sint iusto consequatur tempora saepe corporis eaque, nostrum error dolore enim quisquam? Rem, nemo, delectus at recusandae quod sed quo mollitia perspiciatis laboriosam aperiam non labore voluptatem! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, ex deserunt odit quae recusandae nulla cum natus. Minus dolorum quas tenetur, sint laboriosam amet dignissimos rerum. Similique, beatae modi. Commodi, quasi saepe at in iure non consectetur asperiores, quod distinctio ea inventore totam ad debitis a perspiciatis assumenda aperiam ipsa odio expedita suscipit quam amet? Asperiores sequi commodi porro repellat possimus. Officiis cumque itaque dolorem blanditiis odio exercitationem nam, rerum expedita provident fugiat sint id doloremque molestias possimus magni, assumenda deleniti veritatis suscipit nesciunt ipsam. Accusantium eius quae assumenda illo delectus aliquid quod vel iusto voluptas, ratione a iste culpa.</div>
+        <div class="item item3"></div>
+    </div>
+</body>
+</html>

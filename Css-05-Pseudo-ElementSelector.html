@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p::first-letter {
+        background-color: red;
+      }
+      p::first-line {
+        color: blue;
+      }
+      ul ::marker{
+        content: "🥰";
+      }
+      ul :nth-child(even)::marker{
+        content: "🤤";
+      }
+      *::Selection{
+        color: green;
+      }
+
+        .container::after {
+          content: "SDF";
+           
+          background-color: red;
+          
+        }
+        .container::before {
+          content: "";
+          display: inline-block;
+          background-color: red;
+          width: 50px;
+          height: 16px;
+        }
+
+
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit temporibus
+      aut amet facilis unde deleniti, et nisi impedit ullam aliquam nobis
+      blanditiis officia quia sequi quas aperiam omnis dolor! Atque, similique.
+      Neque ipsum, molestiae molestias placeat autem odit sed nostrum
+      laboriosam! Molestiae doloribus facilis deleniti corrupti quisquam. Quam
+      est reprehenderit harum tempora molestias dolore quod error. Voluptate
+      dolorem similique blanditiis doloremque quaerat! Ex doloribus nostrum eos
+      quasi omnis deserunt aliquam quia eligendi pariatur, perferendis eveniet
+      hic distinctio quidem quod iure? Quos, fuga. Nostrum commodi sit cum saepe
+      deserunt, natus nemo, facere numquam voluptate eos ipsa illum voluptatibus
+      a, iusto fugiat.
+    </p>
+    
+   
+    <ul>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+    </ul>
+
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius inventore velit iste, ea quae in a deleniti quos officia optio! Quae illum suscipit minus maiores explicabo fuga qui id voluptatum tenetur adipisci libero ipsam dolorem officia sequi, architecto omnis voluptas! Recusandae magni repudiandae eos optio eveniet illum quod explicabo ex!
+    </div>
+    <br>
+    <span class="container">OR</span>
+
+  </body>
+</html>

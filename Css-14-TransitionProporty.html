@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            position: relative;
+            top: 50px;
+            left: 100px;
+            padding: 10px;
+            width: 400px;
+            background-color: rgba(255, 253, 253, 0.597);
+            border-top-left-radius: 30px;
+            border-bottom-left-radius: 30px;
+
+        }
+
+        .loader {
+            height: 50px;
+            background-color: red;
+            width: 5%;
+            border-top-left-radius: 30px;
+            border-bottom-left-radius: 30px;
+            transition-property: all;
+            transition-duration: 6s;
+            transition-delay: 4s;
+        }
+
+        .last {
+            background-color: rgba(255, 253, 253, 0.597);
+            height: 40px;
+            width: 15px;
+            position: absolute;
+            top: 15.5px;
+            right: -15px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+
+        .container:hover .loader {
+            width: 100%;
+            background-color: rgb(20, 213, 20);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="loader"></div>
+        <div class="last"></div>
+    </div>
+</body>
+
+</html>

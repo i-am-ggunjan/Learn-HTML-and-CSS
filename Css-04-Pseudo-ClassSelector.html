@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /*1st class*/
+        a:hover{
+            background-color: black;
+        }
+        a:link{
+            color: orangered;
+        }
+        a:visited{
+            color:yellow;
+        }
+        a:active{
+            color: red;
+        }
+       /* :root {
+            font-size: 10px;
+        } */
+        
+         
+        span:hover{ 
+            background-color: aqua;
+        }
+        
+
+        /*2nd class*/
+        /*
+        div :first-child{
+            background-color: blu e;
+        }
+        div :last-child{
+            background-color: aqua;
+        }
+        div :nth-child(5){
+            background-color: chartreuse;
+        }
+        div :nth-child(even){
+            background-color: red;
+        }
+        div :nth-child(odd){
+            background-color: green;
+        }
+        div :nth-child(6){
+            background-color: yellow;
+        }
+        */
+
+        div p:first-of-type{
+            background-color: red;
+        }
+        div span:last-of-type{
+            background-color: blue;
+        }
+        /* 
+        div p:nth-of-type(4){
+            background-color: green;
+        }
+        div span:nth-of-type(3){
+            background-color: yellow;
+        }
+        div span:nth-of-type(even){
+            background-color: brown
+        }*/
+
+    </style>
+</head>
+<body>
+
+    <!-- 1st class -->
+
+    <a href="Resume.html">RESUME</a>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis non minus necess <span> itatibus, consectetur facere, vero excepturi reiciendis </span>cupiditate nulla at voluptate? Illo, expedita beatae! Officia nulla ullam tempora laborum autem.</p>
+
+    <!-- 2nd class -->
+
+    <div>
+        <p>1</p>
+        <p>2</p>
+        <span>3</span>
+        <p>4</p>
+        <span>5</span>
+        <p>6</p>
+        <span>7</span>
+        <p>8</p>
+        <span>9</span>
+    </div>
+</body>
+</html>
