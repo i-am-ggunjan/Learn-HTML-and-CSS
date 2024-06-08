@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        p[class~='name1'] {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form>
+        <label for="conn">Name</label>
+        <input id="conn" type="password" name="pass"> <br><br>
+        <button id="btn">Submit</button>
+    </form>
+
+    <script>
+        let form = document.getElementById("conn")
+
+        let name = form.name
+        let value = form.value
+        let butt = document.getElementById("btn")
+
+        butt.addEventListener("click", (e) => {
+            e.preventDefault()
+            console.log(name);
+            console.log(value);
+
+            const obj = {
+                name,
+                value
+            }
+
+            console.log(obj);
+
+            let newobj = JSON.stringify(obj)
+            localStorage.setItem(Math.random(), newobj)
+        })
+
+    </script>
+</body>
+
+</html>
